@@ -1,6 +1,5 @@
 function greet(name) {
-  // eslint-disable-next-line prefer-template
-  return "Hello, " + name;
+  return `Hello, ${name}`;
 }
 
 const greeting = greet("Logan");
