@@ -4,3 +4,6 @@ function greet(name) {
 }
 
 const greeting = greet("Logan");
+
+// eslint-disable-next-line no-console
+console.log(greeting);
