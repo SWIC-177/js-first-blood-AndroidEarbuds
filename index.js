@@ -7,17 +7,17 @@ const greeting = greet("Logan");
 // eslint-disable-next-line no-console
 console.log(greeting);
 
+const person = {
+  name: "John",
+  age: 18,
+};
 
-const name = 'Logan';
-const age = 23;
+function verifyAdulthood(personName, personAge) {
+  if (personAge >= 18) return `Welcome, ${personName}!`;
 
-function verifyAdulthood(:'Logan', : 23); {
-  if (age >= 18) {
-    return `Welcome, ${name}!`;
-  } else {
-    return `You are not old enough to enter, ${name}.`;
-  }
+  return `You are not old enough to enter, ${personName}.`;
 }
 
+const adultMessage = verifyAdulthood(person.name, person.age);
 
-console.log(verifyAdulthood("Logan", 23));
+console.log(adultMessage);
